@@ -1,7 +1,26 @@
 let latexInput = document.getElementById('latexInput');
 let latexOutput = document.getElementById('latexOutput');
 
+document.addEventListener('DOMContentLoaded', function() {
+    loadLastInputValue();
+});
+
 latexInput.oninput = function(element) {
-    let input = element.target.value;
-    latexOutput.src = "https://codecogs.com/gif.latex?" + input;
-};
+    let val = element.target.value;
+    setLastInputValue(val);
+
+    latexOutput.src = val ? 'https://codecogs.com/gif.latex?' + val : '';
+}
+
+function loadLastInputValue() {
+    chrome.storage.local.get(['ccLastValue'], function(val) {
+        if (val.ccLastValue) {
+            latexInput.value = val.ccLastValue;
+            latexInput.dispatchEvent(new Event("input"))
+        }
+    });
+}
+
+function setLastInputValue(val) {
+    chrome.storage.local.set({'ccLastValue': val }, function(){});
+}
