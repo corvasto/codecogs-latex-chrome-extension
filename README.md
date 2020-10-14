@@ -13,7 +13,7 @@ Take a look
 
 ## Installation
 I don't have Google account for publishing this extension on Chrome Web Store, but if you want to install it from the source, it's easy.
-- Download this source code. Unzip it somewhere. 
+- Download this source code as ZIP file (click the green button above). Unzip it somewhere. 
 - Go to Chrome extensions settings (or just go to url bar: type chrome://extensions and hit enter). 
 - Activate developer mode.
 - Click "Load Unpack" button and choose the folder where you put the source code.
