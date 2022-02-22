@@ -1,7 +1,7 @@
 # CodeCogs LaTeX Chrome Extension
 
 **A very simple Chrome extension for LaTex editor based on CodeCogs.**  
-Visit CodeCogs: https://www.codecogs.com/latex/eqneditor.php
+Visit CodeCogs: https://www.codecogs.com/latex/eqneditor.php and https://editor.codecogs.com/docs/.
 
 This Chrome extension was initally created for writing math equations on Medium, because Medium doesn't provide any tool for that.  
 After searching a lot of online LaTeX equation editors, I think CodeCogs is the best tool to generate math equations and fortunately the (default format) images generated also look good on Medium. So, rather than having separate tabs to write and copy-paste the equations, I think it'd be good if we have an extension with little popup on browser to do the job.
