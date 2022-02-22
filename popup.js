@@ -9,7 +9,7 @@ latexInput.oninput = function(element) {
     let val = element.target.value;
     setLastInputValue(val);
 
-    latexOutput.src = val ? 'https://codecogs.com/gif.latex?' + val : '';
+    latexOutput.src = val ? 'https://latex.codecogs.com/svg.image?' + val : '';
 }
 
 function loadLastInputValue() {
