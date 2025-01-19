@@ -1,13 +1,12 @@
 {
   "name": "A Very Simple LaTeX Equation Editor",
   "version": "1.0",
-  "description": "A very simple Chrome extensions to generate LaTeX equation as an image based on CodeCogs LaTeX Equation Editor",
+  "description": "A very simple Chrome extension to generate LaTeX equations as images based on CodeCogs LaTeX Equation Editor",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "permissions": ["storage"],
-  "browser_action": {
+  "action": {
     "default_icon": {
       "48": "images/maths.png"
     },
@@ -17,5 +16,5 @@
   "icons": {
     "48": "images/maths.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
